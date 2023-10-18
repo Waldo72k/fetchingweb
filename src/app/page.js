@@ -8,11 +8,13 @@ const HomePage = async () => {
   console.log(products);
 
   return (
-    <div>
-      <h1 className=" text-center font-extrabold text-2xl">Tienda de Waldo</h1>
+    <div className="bg-[#03045E]">
+      <h1 className="py-7 text-center font-extrabold text-7xl">L.A. Waldo Shop</h1>
+      <div className="grid grid-cols-5 gap-7 items-center">
       {products.map((product) => (
         <ProductCard product={product} />
       ))}
+      </div>
     </div>
   )
 };
